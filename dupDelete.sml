@@ -1,12 +1,12 @@
 fun remove(x, []) = []
-  | remove(x, y::1) =
+  | remove(x, y::l) =
     if x = y then
-      remove(x, 1)
+      remove(x, l)
     else
-      y::remove(x, 1):
+      y::remove(x, l);
 
 fun removeDup [] = []
-  | removeDup(X::1) = x::removeDup(remove(x, 1));
+  | removeDup(x::l) = x::removeDup(remove(x, l));
 
 (*test cases*)
 val it = removeDup[1,2,1];
