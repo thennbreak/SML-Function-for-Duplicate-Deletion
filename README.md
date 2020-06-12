@@ -8,9 +8,9 @@ The goal of this program was to take input lists of any type and cut the duplica
 $sml < main.sml
 Standard ML of New Jersey v110.78 [built: Thu Aug 31 03:45:42 2017]
 stdIn:3.10 Warning: calling polyEqual
-val remove = fn : ''a * ''a list -> ''a list
-val removeDup = fn : ''a list -> ''a list
-val it = [1,2] : int list
-val it = ["a"] : string list
-val it = [[1],[1,2],[1,2,3],[4,5]] : int list list
+- val remove = fn : ''a * ''a list -> ''a list
+- val removeDup = fn : ''a list -> ''a list
+- val it = [1,2] : int list
+- val it = ["a"] : string list
+- val it = [[1],[1,2],[1,2,3],[4,5]] : int list list
 ```
